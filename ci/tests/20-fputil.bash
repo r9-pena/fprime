@@ -26,7 +26,7 @@ do
     export CHECK_TARGET_PLATFORM="native"
     for target in "${FPUTIL_TARGETS[@]}"
     do
-        start='date +%s'
+        start="$(date +%s)"
         if [[ "${TEST_TYPE}" != "QUICK" ]] || [[ "${target}" == "generate" ]]
         then
             rm -rf "${deployment}/build-fprime-automatic-"*
@@ -36,7 +36,7 @@ do
         then
             "${SCRIPT_DIR}/clean.bash" || fail_and_stop "Cleaning repository"
         fi
-        end='date +%s'
-        echo "$end - $start"
+        end="$(date +%s)"
+        echo "$[${end} - ${start}]"
     done
 done
