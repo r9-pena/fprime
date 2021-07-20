@@ -8,6 +8,5 @@ if [ "$GITHUB_WORKFLOW" == "Autodocs" ]
 then
     /autodoc.bash
 else
-    echo $1
-    #"$GITHUB_WORKSPACE/ci/master.bash" $1   
+    "$GITHUB_WORKSPACE/ci/master.bash" "QUICK"   
 fi
