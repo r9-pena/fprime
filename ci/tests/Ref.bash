@@ -18,6 +18,11 @@ mkdir -p "${LOG_DIR}"
 # Directory to be used for Ref CI test
 export FPUTIL_DEPLOYS="${FPRIME_DIR}/Ref"
 
+echo "Bash Source: ${BASH_SOURCE}"
+echo "FPRIME_DIR: ${FPRIME_DIR}"
+echo "LOG_DIR: ${LOG_DIR}"
+echo "SCRIPT_DIR: ${SCRIPT_DIR}"
+
 echo -e "${BLUE}Starting CI test ${FPUTIL_DEPLOYS} Ref${NOCOLOR}"
 
 export CMAKE_EXTRA_SETTINGS=""
