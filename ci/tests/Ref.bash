@@ -22,7 +22,7 @@ echo "Bash Source: ${BASH_SOURCE}"
 echo "FPRIME_DIR: ${FPRIME_DIR}"
 echo "LOG_DIR: ${LOG_DIR}"
 echo "SCRIPT_DIR: ${SCRIPT_DIR}"
-${SCRIPT_DIR} ls
+ls ${SCRIPT_DIR}
 
 echo -e "${BLUE}Starting CI test ${FPUTIL_DEPLOYS} Ref${NOCOLOR}"
 
