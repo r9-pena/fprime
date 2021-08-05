@@ -57,7 +57,7 @@ jobs:
         path: ci-logs.tar.gz
         retention-days: 5
 
-  # RPI:
+  RPI:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     container: 
